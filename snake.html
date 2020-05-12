@@ -5,7 +5,7 @@ class SnakeGame{
     constructor() {
         this.canvas = document.getElementById('game');
         this.context = this.canvas.getContext('2d');
-        document.addEventListener('keydown',this.onKeyPress.bind(this));
+        document.addEventListener('keydown', this.onKeyPress.bind(this));
     }
     init(){
         this.positionX = this.positionY = 10;
@@ -60,7 +60,7 @@ class SnakeGame{
     }
     draw(){
         this.context.fillStyle = 'black';
-        this.context.fillRect(0,0,this.canvas.width,this.canvas.height);
+        this.context.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
         this.context.fillStyle = 'white';
         this.context.font = '20px Arial';
